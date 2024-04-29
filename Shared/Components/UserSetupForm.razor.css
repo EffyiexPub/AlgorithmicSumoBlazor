@@ -22,3 +22,12 @@
     margin-right: 0.5em;
 }
 
+.as-user-form button {
+    width: 8em;
+    white-space: nowrap;
+}
+
+.as-user-form input {
+    width: 100%;
+}
+

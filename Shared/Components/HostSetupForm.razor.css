@@ -25,7 +25,20 @@
     border-radius: inherit;
     padding: 0.5em;
     margin-inline: 0.5em;
+    width: calc(100% - 2em);
+    text-align: center;
 }
+
+.as-host-form select option {
+    background-color: #0008;
+    color: var(--as-first-accent-color);
+}
+
+.as-host-form select:has(input) select,
+.as-host-form input {
+    width: calc(50% - 2em);
+    text-align: left;
+} 
 
 .as-host-form select {
     padding: 0.5em 1em;
@@ -33,10 +46,6 @@
 
 .as-host-form input::placeholder {
     color: #FFF8;
-}
-
-.as-host-form select option:last-child[selected] {
-    color: aqua;
 }
 
 
