@@ -1,0 +1,37 @@
+﻿
+name: Deploy to GitHub Pages
+
+on:
+    push:
+        branches: [master]
+
+jobs:
+     deploy-to-github-pages:
+        runs-on: ubuntu-latest
+        steps:
+            
+            - uses: actions/checkout@v2
+            
+            - name: Setup .NET SDK 7.0.x
+              uses: actions/setup-dotnet@v1
+              with:
+                dotnet-version: "7.0.x"
+
+            - name: Publish .NET Project
+              run: dotnet publish AlgorithmicSumoBlazor.csproj -c Release -o release --nologo
+
+            - name: Change base-tag in index.html from / to AlgorithmicSumoBlazor
+              run: sed -i 's/<base href="\/" \/>/<base href="\/AlgorithmicSumoBlazor\/" \/>/g' release/wwwroot/index.html
+
+            - name: copy index.html to 404.html
+              run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+            - name: Add .nojekyll file
+              run: touch release/wwwroot/.nojekyll
+
+            - name: Commit wwwroot to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@4.1.5
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: gh-pages
+                  folder: release/wwwroot
