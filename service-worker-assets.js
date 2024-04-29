@@ -205,7 +205,7 @@
       "url": "favicon.png"
     },
     {
-      "hash": "sha256-xDg6zbfx0s8T\/WwSfErLgycfJSb+epy5Al2ZBulkowo=",
+      "hash": "sha256-\/mSgQ0fRW9bZK2ZNEYEWUoDxlOeH5EJeR5b8JvD45bw=",
       "url": "index.html"
     },
     {
@@ -217,9 +217,9 @@
       "url": "pwa\/icon-512.png"
     },
     {
-      "hash": "sha256-J70B1szCL53LMbw4ScI4bSyWIo9hrmrL9vVEQEChbl0=",
+      "hash": "sha256-uIlaR9yNunNrfddhRUxCZyz9FlrvFJzHuINJP2EbAec=",
       "url": "pwa\/manifest.json"
     }
   ],
-  "version": "FAaOINS0"
+  "version": "ny+wzsgw"
 };
