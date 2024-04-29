@@ -1,0 +1,32 @@
+﻿
+<div class="as-host-form">
+
+    <label for="as-host-select"> Host: </label>
+    <select 
+        @onchange=HostSelectionChange 
+        name="as-host-select" id="as-host-select" required>
+        <option value="default" selected> Default </option>
+        <option value="fallback"> Fallback </option>
+        <option value="local"> Local </option>
+        <option value="custom"> Custom </option>
+    </select>
+    
+    @if(EditCustomHostname) {
+        <input style="" type="url" placeholder="Hostname..." id="as-host-custom-input" />
+    }
+
+</div>
+
+@code {
+
+    public bool EditCustomHostname {
+        get;
+        private set;
+    } = false;
+
+    public void HostSelectionChange(ChangeEventArgs args) {
+        if(args.Value != null)
+            EditCustomHostname = (args.Value.ToString() == "custom");
+    }
+
+}

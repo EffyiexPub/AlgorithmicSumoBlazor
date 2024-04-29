@@ -1,0 +1,27 @@
+
+@import url("open-iconic/font/css/open-iconic-bootstrap.min.css");
+
+@import url("AppBlazorUI.css");
+
+:root {
+    --as-background-color: #444448;
+    --as-foreground-color: #33CC99CC;
+    --as-foreground-shadow-color: #33FF9944;
+    --as-first-accent-color: #9933CC88;
+    --as-first-accent-shadow-color: #9933FF44;
+    --as-second-accent-color: #99CC3388;
+    --as-second-accent-shadow-color: #99FF3344;
+}
+
+body {
+    background-color: var(--as-background-color);
+    color: var(--as-foreground-color);
+}
+
+* {
+    outline: none !important;
+}
+
+
+
+

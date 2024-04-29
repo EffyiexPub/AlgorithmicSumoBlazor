@@ -1,6 +1,6 @@
 {
-  "name": "AlgorithmicSumoBlazor",
-  "short_name": "AlgorithmicSumoBlazor",
+  "name": "AlgorithmicSumo",
+  "short_name": "AlgoSumo",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",

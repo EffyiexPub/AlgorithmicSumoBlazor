@@ -1,0 +1,24 @@
+﻿
+.as-user-form {
+    font-size: 2vh;
+    border: var(--as-first-accent-color) 1px solid;
+    border-radius: 4px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    background-color: #0003;
+    box-shadow: 0 0 8px 4px var(--as-first-accent-shadow-color);
+    margin-top: 1em;
+}
+
+.as-user-form button,
+.as-user-form input {
+    background-color: inherit;
+    border-color: inherit;
+    border-style: solid;
+    border-radius: 4px;
+    color: var(--as-foreground-color);
+    padding: 0.25em 0.5em;
+    margin-right: 0.5em;
+}
+

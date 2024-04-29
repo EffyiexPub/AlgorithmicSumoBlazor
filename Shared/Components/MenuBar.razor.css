@@ -1,0 +1,30 @@
+﻿
+.as-menubar {
+    position: relative;
+    width: stretch;
+    margin: 8px;
+    height: 56px;
+    background-color: #0006;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    padding: 4px;
+    border: var(--as-foreground-color) 1px solid;
+    box-shadow: 0 4px 12px 4px var(--as-foreground-shadow-color);
+}
+
+.as-menubar .as-logo {
+    height: calc(100% - 16px);
+    margin: 8px;
+}
+
+.as-menubar .as-label {
+    font-size: 150%;
+    color: var(--as-foreground-color);
+    position: relative;
+    margin: 0.0675em;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
