@@ -26,7 +26,20 @@
     border-radius: inherit;
     padding: 0.5em;
     margin-inline: 0.5em;
+    width: calc(100% - 2em);
+    text-align: center;
 }
+
+.as-host-form select option[b-2us9fkjj5p] {
+    background-color: #0008;
+    color: var(--as-first-accent-color);
+}
+
+.as-host-form select:has(input) select[b-2us9fkjj5p],
+.as-host-form input[b-2us9fkjj5p] {
+    width: calc(50% - 2em);
+    text-align: left;
+} 
 
 .as-host-form select[b-2us9fkjj5p] {
     padding: 0.5em 1em;
@@ -34,10 +47,6 @@
 
 .as-host-form input[b-2us9fkjj5p]::placeholder {
     color: #FFF8;
-}
-
-.as-host-form select option:last-child[selected][b-2us9fkjj5p] {
-    color: aqua;
 }
 
 
@@ -95,6 +104,15 @@
     color: var(--as-foreground-color);
     padding: 0.25em 0.5em;
     margin-right: 0.5em;
+}
+
+.as-user-form button[b-ec2dbdthq1] {
+    width: 8em;
+    white-space: nowrap;
+}
+
+.as-user-form input[b-ec2dbdthq1] {
+    width: 100%;
 }
 
 /* /Shared/MainLayout.razor.rz.scp.css */

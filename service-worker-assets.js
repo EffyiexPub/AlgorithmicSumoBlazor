@@ -145,7 +145,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-mMtHxhLOmhyAmtLRUiy7qQDmY6rwRQKhdYnIlFxspIA=",
+      "hash": "sha256-yqAJS8X9dcXaEyxLLC4p7UB3EkDA8lf0advOfRO1RRs=",
       "url": "AlgorithmicSumoBlazor.styles.css"
     },
     {
@@ -221,5 +221,5 @@
       "url": "pwa\/manifest.json"
     }
   ],
-  "version": "ny+wzsgw"
+  "version": "X5E1\/ooH"
 };
